@@ -17,6 +17,7 @@ public:
     Clock() = default;
 
     Time restart();
+    Time getElapsedTime();
 
     sf::Clock m_clock;
 };

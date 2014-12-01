@@ -23,7 +23,7 @@ Time Time::add(const Time& other)
 
 Time Time::sub(const Time& other)
 {
-     m_time - other.m_time;
+     return m_time - other.m_time;
 }
 
 bool Time::eq(const Time& other)
@@ -65,8 +65,7 @@ Time seconds(float sec)
 
 Time milliseconds(long int milSec)
 {
-    sf::Time t = sf::milliseconds(milSec);
-    return Time(t);
+    return Time(sf::milliseconds(milSec));
 }
 
 Time microseconds(long int micSec)
