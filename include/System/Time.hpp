@@ -21,6 +21,10 @@ public:
     sf::Time m_time;
 };
 
+Time seconds(float);
+Time milliseconds(int);
+Time microseconds(int);
+
 } //lsf
 
 void registerTime(lua_State* L);

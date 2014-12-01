@@ -6,4 +6,5 @@ whileClock = sfml.Clock()
 
 while true do
 	print(tostring(whileClock:restart():asMicroseconds()))
+	sfml.sleep(sfml.seconds(0.5))
 end

@@ -84,20 +84,19 @@
 	<Lua5.2/lua.hpp>
 	<LuaBridge/luabridge.h>
 
-1417426968 source:z:\programming\c++\!projects\lsfml\src\liblsfml.cpp
+1417428191 source:z:\programming\c++\!projects\lsfml\src\liblsfml.cpp
 	<iostream>
 	"libLSFML.hpp"
 	"System/System.hpp"
 
-1417426305 z:\programming\c++\!projects\lsfml\include\system\system.hpp
+1417429356 z:\programming\c++\!projects\lsfml\include\system\system.hpp
 	<Lua5.2/lua.hpp>
 	<LuaBridge/luabridge.h>
+	<SFML/System.hpp>
 
-1417427690 source:z:\programming\c++\!projects\lsfml\src\system\clock.cpp
+1417428195 source:z:\programming\c++\!projects\lsfml\src\system\clock.cpp
 	"System/Clock.hpp"
 	<iostream>
-	<SFML/System/Clock.hpp>
-	"System/Time.hpp"
 
 1417428179 z:\programming\c++\!projects\lsfml\include\system\clock.hpp
 	<Lua5.2/lua.hpp>
@@ -117,16 +116,98 @@
 1414963419 z:\programming\c++\!projects\lsfml\extlibs\headers\sfml\include\sfml\system\time.hpp
 	<SFML/System/Export.hpp>
 
-1417428058 source:z:\programming\c++\!projects\lsfml\src\system\system.cpp
+1417429200 source:z:\programming\c++\!projects\lsfml\src\system\system.cpp
 	"System/System.hpp"
 	"System/Time.hpp"
 	"System/Clock.hpp"
 
-1417427819 z:\programming\c++\!projects\lsfml\include\system\time.hpp
+1417429283 z:\programming\c++\!projects\lsfml\include\system\time.hpp
 	<Lua5.2/lua.hpp>
 	<LuaBridge/luabridge.h>
 	<SFML/System/Time.hpp>
 
-1417427840 source:z:\programming\c++\!projects\lsfml\src\system\time.cpp
+1417429280 source:z:\programming\c++\!projects\lsfml\src\system\time.cpp
 	"System/Time.hpp"
+
+1414963419 z:\programming\c++\!projects\lsfml\extlibs\headers\sfml\include\sfml\system.hpp
+	<SFML/Config.hpp>
+	<SFML/System/Clock.hpp>
+	<SFML/System/Err.hpp>
+	<SFML/System/InputStream.hpp>
+	<SFML/System/Lock.hpp>
+	<SFML/System/Mutex.hpp>
+	<SFML/System/Sleep.hpp>
+	<SFML/System/String.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/ThreadLocal.hpp>
+	<SFML/System/ThreadLocalPtr.hpp>
+	<SFML/System/Utf.hpp>
+	<SFML/System/Vector2.hpp>
+	<SFML/System/Vector3.hpp>
+
+1414963419 z:\programming\c++\!projects\lsfml\extlibs\headers\sfml\include\sfml\system\err.hpp
+	<SFML/System/Export.hpp>
+	<ostream>
+
+1414963419 z:\programming\c++\!projects\lsfml\extlibs\headers\sfml\include\sfml\system\inputstream.hpp
+	<SFML/Config.hpp>
+
+1414963419 z:\programming\c++\!projects\lsfml\extlibs\headers\sfml\include\sfml\system\lock.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+
+1414963419 z:\programming\c++\!projects\lsfml\extlibs\headers\sfml\include\sfml\system\noncopyable.hpp
+	<SFML/System/Export.hpp>
+
+1414963419 z:\programming\c++\!projects\lsfml\extlibs\headers\sfml\include\sfml\system\mutex.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+
+1414963419 z:\programming\c++\!projects\lsfml\extlibs\headers\sfml\include\sfml\system\sleep.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/Time.hpp>
+
+1414963419 z:\programming\c++\!projects\lsfml\extlibs\headers\sfml\include\sfml\system\string.hpp
+	<SFML/System/Export.hpp>
+	<locale>
+	<string>
+
+1414963419 z:\programming\c++\!projects\lsfml\extlibs\headers\sfml\include\sfml\system\thread.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdlib>
+	<SFML/System/Thread.inl>
+
+1414963419 z:\programming\c++\!projects\lsfml\extlibs\headers\sfml\include\sfml\system\thread.inl
+
+1414963419 z:\programming\c++\!projects\lsfml\extlibs\headers\sfml\include\sfml\system\threadlocal.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<cstdlib>
+
+1414963419 z:\programming\c++\!projects\lsfml\extlibs\headers\sfml\include\sfml\system\threadlocalptr.hpp
+	<SFML/System/ThreadLocal.hpp>
+	<SFML/System/ThreadLocalPtr.inl>
+
+1414963419 z:\programming\c++\!projects\lsfml\extlibs\headers\sfml\include\sfml\system\threadlocalptr.inl
+
+1414963419 z:\programming\c++\!projects\lsfml\extlibs\headers\sfml\include\sfml\system\utf.hpp
+	<SFML/Config.hpp>
+	<algorithm>
+	<locale>
+	<string>
+	<cstdlib>
+	<SFML/System/Utf.inl>
+
+1414963419 z:\programming\c++\!projects\lsfml\extlibs\headers\sfml\include\sfml\system\utf.inl
+
+1414963419 z:\programming\c++\!projects\lsfml\extlibs\headers\sfml\include\sfml\system\vector2.hpp
+	<SFML/System/Vector2.inl>
+
+1414963419 z:\programming\c++\!projects\lsfml\extlibs\headers\sfml\include\sfml\system\vector2.inl
+
+1414963419 z:\programming\c++\!projects\lsfml\extlibs\headers\sfml\include\sfml\system\vector3.hpp
+	<SFML/System/Vector3.inl>
+
+1414963419 z:\programming\c++\!projects\lsfml\extlibs\headers\sfml\include\sfml\system\vector3.inl
 
