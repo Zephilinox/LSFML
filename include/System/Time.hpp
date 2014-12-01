@@ -15,15 +15,15 @@ public:
     Time(sf::Time);
 
     float asSeconds();
-    int asMilliseconds();
-    int asMicroseconds();
+    long int asMilliseconds();
+    long int asMicroseconds();
 
     sf::Time m_time;
 };
 
 Time seconds(float);
-Time milliseconds(int);
-Time microseconds(int);
+Time milliseconds(long int);
+Time microseconds(long int);
 
 } //lsf
 

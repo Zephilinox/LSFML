@@ -14,12 +14,12 @@ float Time::asSeconds()
     return m_time.asSeconds();
 }
 
-int Time::asMilliseconds()
+long int Time::asMilliseconds()
 {
     return m_time.asMilliseconds();
 }
 
-int Time::asMicroseconds()
+long int Time::asMicroseconds()
 {
     return m_time.asMicroseconds();
 }
@@ -31,12 +31,12 @@ Time seconds(float sec)
     return Time(sf::seconds(sec));
 }
 
-Time milliseconds(int milSec)
+Time milliseconds(long int milSec)
 {
     return Time(sf::milliseconds(milSec));
 }
 
-Time microseconds(int micSec)
+Time microseconds(long int micSec)
 {
     return Time(sf::microseconds(micSec));
 }
@@ -48,8 +48,8 @@ void registerTime(lua_State* L)
     luabridge::getGlobalNamespace(L)
         .beginNamespace("sfml")
             .addFunction("seconds", &lsf::seconds)
-            .addFunction("milliseconds", &lsf::seconds)
-            .addFunction("microseconds", &lsf::seconds)
+            .addFunction("milliseconds", &lsf::milliseconds)
+            .addFunction("microseconds", &lsf::microseconds)
             .beginClass<lsf::Time>("Time")
                 .addConstructor<void(*)(void)>()
                 .addFunction("asSeconds", &lsf::Time::asSeconds)
