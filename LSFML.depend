@@ -77,19 +77,54 @@
 
 1414963419 z:\programming\c++\!projects\lsfml\extlibs\headers\luabridge\include\luabridge\detail\namespace.h
 
-1417424205 source:z:\programming\c++\!projects\lsfml\lsfml.cpp
+1417426959 source:z:\programming\c++\!projects\lsfml\lsfml.cpp
 	"libLSFML.hpp"
 
-1417422913 z:\programming\c++\!projects\lsfml\include\liblsfml.hpp
+1417426938 z:\programming\c++\!projects\lsfml\include\liblsfml.hpp
 	<Lua5.2/lua.hpp>
 	<LuaBridge/luabridge.h>
 
-1417424963 source:z:\programming\c++\!projects\lsfml\src\liblsfml.cpp
+1417426968 source:z:\programming\c++\!projects\lsfml\src\liblsfml.cpp
 	<iostream>
 	"libLSFML.hpp"
 	"System/System.hpp"
 
-1417424929 z:\programming\c++\!projects\lsfml\include\system\system.hpp
+1417426305 z:\programming\c++\!projects\lsfml\include\system\system.hpp
 	<Lua5.2/lua.hpp>
 	<LuaBridge/luabridge.h>
+
+1417427690 source:z:\programming\c++\!projects\lsfml\src\system\clock.cpp
+	"System/Clock.hpp"
+	<iostream>
+	<SFML/System/Clock.hpp>
+	"System/Time.hpp"
+
+1417424940 z:\programming\c++\!projects\lsfml\include\system\clock.hpp
+	<Lua5.2/lua.hpp>
+	<LuaBridge/luabridge.h>
+
+1414963419 z:\programming\c++\!projects\lsfml\extlibs\headers\sfml\include\sfml\system\clock.hpp
+	<SFML/System/Export.hpp>
+	<SFML/System/Time.hpp>
+
+1414963419 z:\programming\c++\!projects\lsfml\extlibs\headers\sfml\include\sfml\system\export.hpp
+	<SFML/Config.hpp>
+
+1414963419 z:\programming\c++\!projects\lsfml\extlibs\headers\sfml\include\sfml\config.hpp
+
+1414963419 z:\programming\c++\!projects\lsfml\extlibs\headers\sfml\include\sfml\system\time.hpp
+	<SFML/System/Export.hpp>
+
+1417425671 source:z:\programming\c++\!projects\lsfml\src\system\system.cpp
+	"System/System.hpp"
+	"System/Time.hpp"
+	"System/Clock.hpp"
+
+1417427819 z:\programming\c++\!projects\lsfml\include\system\time.hpp
+	<Lua5.2/lua.hpp>
+	<LuaBridge/luabridge.h>
+	<SFML/System/Time.hpp>
+
+1417427840 source:z:\programming\c++\!projects\lsfml\src\system\time.cpp
+	"System/Time.hpp"
 

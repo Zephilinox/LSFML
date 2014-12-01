@@ -2,6 +2,6 @@
 
 extern "C" __declspec(dllexport) int luaopen_LSFML(lua_State* L)
 {
-    registerLSFML(L);
+    registerlsf(L);
     return 1;
 }

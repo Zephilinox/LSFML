@@ -6,3 +6,9 @@ print("hi1")
 
 sfml.print("hi2\n")
 sfml.clockPrint("hi2")
+
+whileClock = sfml.Clock()
+
+while true do
+	print(tostring(whileClock:restart():asMicroseconds()))
+end

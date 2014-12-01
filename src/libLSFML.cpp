@@ -4,7 +4,7 @@
 
 #include "System/System.hpp"
 
-namespace lsfml
+namespace lsf
 {
     void print(const std::string& msg)
     {
@@ -12,11 +12,11 @@ namespace lsfml
     }
 }
 
-void registerLSFML(lua_State* L)
+void registerlsf(lua_State* L)
 {
     luabridge::getGlobalNamespace(L)
         .beginNamespace("sfml")
-            .addFunction("print", &lsfml::print)
+            .addFunction("print", &lsf::print)
         .endNamespace()
     ;
 
