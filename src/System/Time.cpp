@@ -1,25 +1,57 @@
 #include "System/Time.hpp"
 
+#include <iostream>
+
 namespace lsf
 {
 
 ///Time
-Time::Time(sf::Time time)
+Time::Time(const Time& time)
+{
+    m_time = time.m_time;
+}
+
+Time::Time(const sf::Time& time)
 {
     m_time = time;
 }
 
-float Time::asSeconds()
+Time Time::add(const Time& other)
+{
+    return Time(m_time + other.m_time);
+}
+
+Time Time::sub(const Time& other)
+{
+     m_time - other.m_time;
+}
+
+bool Time::eq(const Time& other)
+{
+    return m_time == other.m_time;
+}
+
+bool Time::lt(const Time& other)
+{
+    return m_time < other.m_time;
+}
+
+bool Time::le(const Time& other)
+{
+    return m_time <= other.m_time;
+}
+
+float Time::asSeconds() const
 {
     return m_time.asSeconds();
 }
 
-long int Time::asMilliseconds()
+long int Time::asMilliseconds() const
 {
     return m_time.asMilliseconds();
 }
 
-long int Time::asMicroseconds()
+long int Time::asMicroseconds() const
 {
     return m_time.asMicroseconds();
 }
@@ -33,7 +65,8 @@ Time seconds(float sec)
 
 Time milliseconds(long int milSec)
 {
-    return Time(sf::milliseconds(milSec));
+    sf::Time t = sf::milliseconds(milSec);
+    return Time(t);
 }
 
 Time microseconds(long int micSec)
@@ -52,6 +85,11 @@ void registerTime(lua_State* L)
             .addFunction("microseconds", &lsf::microseconds)
             .beginClass<lsf::Time>("Time")
                 .addConstructor<void(*)(void)>()
+                .addFunction("__add", &lsf::Time::add)
+                .addFunction("__sub", &lsf::Time::sub)
+                .addFunction("__eq", &lsf::Time::eq)
+                .addFunction("__le", &lsf::Time::le)
+                .addFunction("__lt", &lsf::Time::lt)
                 .addFunction("asSeconds", &lsf::Time::asSeconds)
                 .addFunction("asMilliseconds", &lsf::Time::asMilliseconds)
                 .addFunction("asMicroseconds", &lsf::Time::asMicroseconds)

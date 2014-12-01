@@ -12,11 +12,18 @@ class Time
 {
 public:
     Time() = default;
-    Time(sf::Time);
+    Time(const Time& t);
+    Time(const sf::Time&);
 
-    float asSeconds();
-    long int asMilliseconds();
-    long int asMicroseconds();
+    Time add(const Time&);
+    Time sub(const Time&);
+    bool eq(const Time&);
+    bool lt(const Time&);
+    bool le(const Time&);
+
+    float asSeconds() const;
+    long int asMilliseconds() const;
+    long int asMicroseconds() const;
 
     sf::Time m_time;
 };
