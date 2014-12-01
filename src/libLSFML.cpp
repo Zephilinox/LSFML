@@ -2,6 +2,8 @@
 
 #include "libLSFML.hpp"
 
+#include "System/System.hpp"
+
 namespace lsfml
 {
     void print(const std::string& msg)
@@ -17,4 +19,6 @@ void registerLSFML(lua_State* L)
             .addFunction("print", &lsfml::print)
         .endNamespace()
     ;
+
+    registerSystem(L);
 }

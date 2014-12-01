@@ -77,6 +77,19 @@
 
 1414963419 z:\programming\c++\!projects\lsfml\extlibs\headers\luabridge\include\luabridge\detail\namespace.h
 
-1417423455 source:z:\programming\c++\!projects\lsfml\lsfml.cpp
+1417424205 source:z:\programming\c++\!projects\lsfml\lsfml.cpp
 	"libLSFML.hpp"
+
+1417422913 z:\programming\c++\!projects\lsfml\include\liblsfml.hpp
+	<Lua5.2/lua.hpp>
+	<LuaBridge/luabridge.h>
+
+1417424963 source:z:\programming\c++\!projects\lsfml\src\liblsfml.cpp
+	<iostream>
+	"libLSFML.hpp"
+	"System/System.hpp"
+
+1417424929 z:\programming\c++\!projects\lsfml\include\system\system.hpp
+	<Lua5.2/lua.hpp>
+	<LuaBridge/luabridge.h>
 
