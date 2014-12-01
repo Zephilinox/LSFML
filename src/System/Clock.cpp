@@ -5,11 +5,6 @@
 namespace lsf
 {
 
-void clockPrint(const std::string& msg)
-{
-    std::cout << "[CLOCK]" << msg;
-}
-
 Time Clock::restart()
 {
     return m_clock.restart();
@@ -25,7 +20,6 @@ void registerClock(lua_State* L)
                 .addConstructor<void(*)(void)>()
                 .addFunction("restart", &lsf::Clock::restart)
             .endClass()
-            .addFunction("clockPrint", &lsf::clockPrint)
         .endNamespace()
     ;
 }

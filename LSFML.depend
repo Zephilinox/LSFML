@@ -99,9 +99,11 @@
 	<SFML/System/Clock.hpp>
 	"System/Time.hpp"
 
-1417424940 z:\programming\c++\!projects\lsfml\include\system\clock.hpp
+1417428179 z:\programming\c++\!projects\lsfml\include\system\clock.hpp
 	<Lua5.2/lua.hpp>
 	<LuaBridge/luabridge.h>
+	<SFML/System/Clock.hpp>
+	"System/Time.hpp"
 
 1414963419 z:\programming\c++\!projects\lsfml\extlibs\headers\sfml\include\sfml\system\clock.hpp
 	<SFML/System/Export.hpp>
@@ -115,7 +117,7 @@
 1414963419 z:\programming\c++\!projects\lsfml\extlibs\headers\sfml\include\sfml\system\time.hpp
 	<SFML/System/Export.hpp>
 
-1417425671 source:z:\programming\c++\!projects\lsfml\src\system\system.cpp
+1417428058 source:z:\programming\c++\!projects\lsfml\src\system\system.cpp
 	"System/System.hpp"
 	"System/Time.hpp"
 	"System/Clock.hpp"

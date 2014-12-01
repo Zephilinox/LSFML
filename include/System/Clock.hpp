@@ -10,8 +10,6 @@
 namespace lsf
 {
 
-void clockPrint(const std::string& msg);
-
 //We need to wrap sf::Clock because we need to return lsf::Time
 class Clock
 {
