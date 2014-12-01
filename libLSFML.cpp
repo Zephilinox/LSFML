@@ -1,4 +1,4 @@
-#include "libLSFML.hpp"
+#include "LSFML.hpp"
 
 extern "C" __declspec(dllexport) int luaopen_LSFML(lua_State* L)
 {

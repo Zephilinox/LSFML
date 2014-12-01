@@ -1,8 +1,8 @@
 #include <iostream>
 
-#include "libLSFML.hpp"
+#include "LSFML.hpp"
 
-#include "System/System.hpp"
+#include "System.hpp"
 
 void registerlsf(lua_State* L)
 {

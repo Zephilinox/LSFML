@@ -77,7 +77,7 @@ solution("LSFML")
         location        ("builds/".._ACTION)
         objdir          ("builds/".._ACTION.."/obj")
         
-        files           {"LSFML.cpp", "include/**.hpp", "src/**.cpp"}
+        files           {"libLSFML.cpp", "include/**.hpp", "src/**.cpp"}
 		
 		if environment == "mingw" or environment == "linux" then
 			buildoptions    ("-std=c++11 -Wall -Wextra -Wno-format -Wno-format-extra-args")
