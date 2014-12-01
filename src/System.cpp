@@ -2,6 +2,7 @@
 
 #include "System/Time.hpp"
 #include "System/Clock.hpp"
+#include "System/Vector2.hpp"
 
 namespace lsf
 {
@@ -22,4 +23,5 @@ void registerSystem(lua_State* L)
 
     registerTime(L);
     registerClock(L);
+    registerVector2(L);
 }

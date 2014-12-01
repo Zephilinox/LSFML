@@ -13,6 +13,9 @@ class Vector2
 public:
     Vector2() = default;
     Vector2(float, float);
+    Vector2(sf::Vector2f vec);
+
+    Vector2 getCopy();
 
     void setX(float);
     void setY(float);

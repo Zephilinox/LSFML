@@ -9,6 +9,16 @@ namespace lsf
     {
     }
 
+    Vector2::Vector2(sf::Vector2f vec)
+        : m_vector(vec)
+    {
+    }
+
+    Vector2 Vector2::getCopy()
+    {
+        return m_vector;
+    }
+
     void Vector2::setX(float x)
     {
         m_vector.x = x;
@@ -37,6 +47,7 @@ void registerVector2(lua_State* L)
         .beginNamespace("sfml")
             .beginClass<lsf::Vector2>("Vector2")
                 .addConstructor<void(*)(float, float)>()
+                .addFunction("getCopy", &lsf::Vector2::getCopy)
                 .addProperty("x", &lsf::Vector2::getX, &lsf::Vector2::setX)
                 .addProperty("y", &lsf::Vector2::getY, &lsf::Vector2::setY)
             .endClass()
