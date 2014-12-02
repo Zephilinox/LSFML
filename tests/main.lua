@@ -1,5 +1,6 @@
-package.cpath = package.cpath .. ";../?.dll"
-local lsfml = require("LSFML")
+--package.cpath = package.cpath .. ";../?.dll"
+--require("LSFML")
+package.loadlib("../LSFML.dll", "system")()
 
 local testTime = require("System/testTime")
 testTime.performTests()
