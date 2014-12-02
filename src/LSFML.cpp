@@ -3,8 +3,8 @@
 #include "LSFML.hpp"
 
 #include "System.hpp"
-//#include "Window.hpp"
-//#include "Graphics.hpp
+#include "Window.hpp"
+#include "Graphics.hpp"
 
 void registerlsf(lua_State* L)
 {
@@ -20,10 +20,10 @@ void registerlsfSystem(lua_State* L)
 
 void registerlsfWindow(lua_State* L)
 {
-    //registerWindow(L)
+    registerWindow(L);
 }
 
 void registerlsfGraphics(lua_State* L)
 {
-    //registerWindow(L)
+    registerGraphics(L);
 }
