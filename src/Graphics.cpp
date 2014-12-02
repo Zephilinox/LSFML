@@ -1,6 +1,7 @@
 #include "Window.hpp"
 
 #include "Graphics/RenderWindow.hpp"
+#include "Graphics/Color.hpp"
 
 namespace lsf
 {
@@ -15,4 +16,5 @@ void registerGraphics(lua_State* L)
     ;
 
     registerRenderWindow(L);
+    registerColor(L);
 }

@@ -5,6 +5,9 @@
 #include <LuaBridge/luabridge.h>
 #include <SFML/Graphics/RenderWindow.hpp>
 
+#include "Graphics/Color.hpp"
+#include "Window/VideoMode.hpp"
+
 namespace lsf
 {
 
@@ -12,7 +15,11 @@ class RenderWindow
 {
 public:
     RenderWindow() = default;
-    RenderWindow(float, float, float, const std::string&);
+    RenderWindow(VideoMode, const std::string&);
+
+    void clear(const Color&);
+    //void draw();
+    void display();
 
     sf::RenderWindow m_window;
 };

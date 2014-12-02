@@ -1,5 +1,7 @@
 #include "Window.hpp"
 
+#include "Window/VideoMode.hpp"
+
 namespace lsf
 {
 
@@ -11,4 +13,6 @@ void registerWindow(lua_State* L)
         .beginNamespace("sfml")
         .endNamespace()
     ;
+
+    registerVideoMode(L);
 }
