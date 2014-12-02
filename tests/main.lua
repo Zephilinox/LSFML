@@ -8,16 +8,11 @@ for k, v in pairs(sfml) do
 	end
 end
 
-local testTime = require("System/testTime")
-testTime.performTests()
+local system = require("System")
+system.performTests()
 
-local testClock = require("System/testClock")
-testClock.performTests()
+local window = require("Window")
+window.performTests()
 
-local testVector2 = require("System/testVector2")
-testVector2.performTests()
-
-local window = sfml.RenderWindow(sfml.VideoMode(1280, 720, 32), "hi")
-window:clear(sfml.Color(40, 40, 40, 255))
-window:display()
-sfml.sleep(sfml.seconds(1))
+local graphics = require("Graphics")
+graphics.performTests()

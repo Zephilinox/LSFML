@@ -8,12 +8,12 @@ function testRestart()
 	return (sfml.Clock():restart() >= sfml.Time())
 end
 
-local testClock = {}
+local clock = {}
 
-function testClock.performTests()
+function clock.performTests()
 	print("\n[TEST]\tClock\t\t\t....")
 	print(testElapsedTime())
 	print(testRestart())
 end
 
-return testClock
+return clock

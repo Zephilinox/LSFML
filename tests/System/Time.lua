@@ -43,9 +43,9 @@ function testSubtract()
 	return (sfml.microseconds(1) - sfml.microseconds(1) == sfml.microseconds(0))
 end
 
-local testTime = {}
+local time = {}
 
-function testTime.performTests()
+function time.performTests()
 	print("[TEST]\tTime\t\t\t....")
 	print(testConstruction())
 	print(testEquality())
@@ -55,4 +55,4 @@ function testTime.performTests()
 	print(testSubtract())
 end
 
-return testTime
+return time
