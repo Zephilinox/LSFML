@@ -9,6 +9,16 @@ namespace lsf
     {
     }
 
+    Color::Color(const sf::Color& col)
+        : m_color(col)
+    {
+    }
+
+    Color Color::getCopy()
+    {
+        return Color(m_color);
+    }
+
     float Color::getR() const
     {
         return m_color.r;
@@ -57,6 +67,7 @@ void registerColor(lua_State* L)
         .beginNamespace("sfml")
             .beginClass<lsf::Color>("Color")
                 .addConstructor<void(*)(float, float, float, float)>()
+                .addFunction("getCopy", &lsf::Color::getCopy)
                 .addProperty("r", &lsf::Color::getR, &lsf::Color::setR)
                 .addProperty("g", &lsf::Color::getG, &lsf::Color::setG)
                 .addProperty("b", &lsf::Color::getB, &lsf::Color::setB)

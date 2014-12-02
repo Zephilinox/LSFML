@@ -14,11 +14,11 @@ function testByVal()
 	io.write("\tBy Val:\t\t\t")
 	
 	local col1 = sfml.Color(255, 255, 255, 255)
-	local col2 = col1
+	local col2 = col1:getCopy()
 	
 	col1.r = 0
 	
-	if col1.r == col1.r then return false end
+	if col1.r == col2.r then return false end
 	
 	return true
 end

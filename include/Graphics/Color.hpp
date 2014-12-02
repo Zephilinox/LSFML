@@ -13,6 +13,9 @@ class Color
 public:
     Color() = default;
     Color(float, float, float, float);
+    Color(const sf::Color&);
+
+    Color getCopy();
 
     float getR() const;
     float getG() const;
