@@ -17,6 +17,12 @@ public:
 
     Vector2 getCopy();
 
+    Vector2 add(const Vector2&);
+    Vector2 sub(const Vector2&);
+    Vector2 mul(float);
+    Vector2 div(float);
+    bool eq(const Vector2&);
+
     void setX(float);
     void setY(float);
 

@@ -1,5 +1,3 @@
---package.cpath = package.cpath .. ";../?.dll"
---require("LSFML")
 package.loadlib("../LSFML.dll", "system")()
 
 local testTime = require("System/testTime")

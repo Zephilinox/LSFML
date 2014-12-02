@@ -4,7 +4,7 @@
     #define EXPORTDLL __declspec(dllexport)
 #else
     #define EXPORTDLL
-#endif //_MSC_VER
+#endif
 
 ///Lua: require("LSFML")
 extern "C" EXPORTDLL int luaopen_LSFML(lua_State* L)
