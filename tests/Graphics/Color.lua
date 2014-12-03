@@ -10,6 +10,30 @@ function testConstruction()
 	return true
 end
 
+function testAdd()
+	io.write("\tAdd:\t\t\t")
+	
+	local col1 = sfml.Color(50, 50, 50, 50)
+	local col2 = sfml.Color(205, 205, 205, 205)
+	local col3 = col1+col2
+	
+	if col3.r ~= 255 or col3.g ~= 255 or col3.b ~= 255 or col3.a ~= 255 then return false end
+	
+	return true
+end
+
+function testSubtract()
+	io.write("\tSubtract:\t\t")
+	
+	local col1 = sfml.Color(255, 255, 255, 255)
+	local col2 = sfml.Color(205, 205, 205, 205)
+	local col3 = col1-col2
+	
+	if col3.r ~= 50 or col3.g ~= 50 or col3.b ~= 50 or col3.a ~= 50 then return false end
+	
+	return true
+end
+
 function testByVal()
 	io.write("\tBy Val:\t\t\t")
 	
@@ -87,6 +111,8 @@ end
 function color.performTests()
 	print("\n[TEST]\tColor\t\t\t....")
 	print(testConstruction())
+	print(testAdd())
+	print(testSubtract())
 	print(testByVal())
 	print(testByRef())
 	print(testRed())

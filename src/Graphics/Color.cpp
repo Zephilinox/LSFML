@@ -19,6 +19,21 @@ namespace lsf
         return Color(m_color);
     }
 
+    Color Color::add (const Color& col)
+    {
+        return Color(m_color+col.m_color);
+    }
+
+    Color Color::sub (const Color& col)
+    {
+        sf::Color c(std::max(0, int(m_color.r - col.m_color.r)),
+                    std::max(0, int(m_color.g - col.m_color.g)),
+                    std::max(0, int(m_color.b - col.m_color.b)),
+                    std::max(0, int(m_color.a - col.m_color.a)));
+
+        return Color(c);
+    }
+
     float Color::getR() const
     {
         return m_color.r;
@@ -68,6 +83,8 @@ void registerColor(lua_State* L)
             .beginClass<lsf::Color>("Color")
                 .addConstructor<void(*)(float, float, float, float)>()
                 .addFunction("getCopy", &lsf::Color::getCopy)
+                .addFunction("__add", &lsf::Color::add)
+                .addFunction("__sub", &lsf::Color::sub)
                 .addProperty("r", &lsf::Color::getR, &lsf::Color::setR)
                 .addProperty("g", &lsf::Color::getG, &lsf::Color::setG)
                 .addProperty("b", &lsf::Color::getB, &lsf::Color::setB)

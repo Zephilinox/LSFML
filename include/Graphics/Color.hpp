@@ -17,6 +17,9 @@ public:
 
     Color getCopy();
 
+    Color add (const Color&);
+    Color sub (const Color&);
+
     float getR() const;
     float getG() const;
     float getB() const;
