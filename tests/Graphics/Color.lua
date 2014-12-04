@@ -1,5 +1,3 @@
-local color = {}
-
 function testConstruction()
 	io.write("\tConstruction:\t\t")
 	
@@ -107,6 +105,8 @@ function testAlpha()
 	
 	return true
 end
+
+local color = {}
 
 function color.performTests()
 	print("\n[TEST]\tColor\t\t\t....")
