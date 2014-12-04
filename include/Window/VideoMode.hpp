@@ -15,6 +15,16 @@ public:
     VideoMode(float, float, float);
     VideoMode(const sf::VideoMode&);
 
+    VideoMode getCopy();
+
+    float getWidth() const;
+    float getHeight() const;
+    float getBpp() const;
+
+    void setWidth(float);
+    void setHeight(float);
+    void setBpp(float);
+
     bool isValid();
 
     static VideoMode getDesktopMode();
